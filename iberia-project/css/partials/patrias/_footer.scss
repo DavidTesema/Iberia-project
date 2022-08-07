@@ -1,0 +1,82 @@
+.footer-container {
+    .centering-container {
+        // left-footer-container
+        .left-footer-container {
+            .adantrip-about-container {
+                h3 {
+                    color: rgb(68, 68, 68);
+                }
+                p {
+                    color: rgb(136, 129, 129);
+                    font-size: 13px;
+                }
+            }
+            .travel-mate-container {
+                a {
+                    color: rgb(136, 129, 129);
+                    font-size: 13px;
+                }
+            }
+            .explore-container {
+                a {
+                    color: rgb(136, 129, 129);
+                    font-size: 13px;
+                }
+            }
+            .book-container {
+                a {
+                    color: rgb(136, 129, 129);
+                    font-size: 13px;
+                }
+            }
+        }
+        // right-footer-container
+        .right-footer-container {
+            .advertising-img {
+                width: 357px;
+                height: 276px;
+                position: absolute;
+                z-index: 0;
+                right: 115px;
+            }
+            .advertising-info {
+                position: absolute;
+                z-index: 1;
+                right: 155px;
+                p {
+                    font-size: 15px;
+                }
+                input {
+                    width: 290px;
+                }
+                .btn-advertising {
+                    @include btnStyle (40px);
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:576px) {
+    .footer-container {
+        .centering-container {
+            .right-footer-container {
+                // advertising-img
+                .advertising-img {
+                    width: 430px;
+                    height: 180px;
+                    right: 0px;
+                }
+                // advertising-info
+                .advertising-info {
+                    right: 60px;
+                    .btn-advertising {
+                        position: relative;
+                        left: 80px;
+                    }
+                }
+            }
+        }
+    }
+}

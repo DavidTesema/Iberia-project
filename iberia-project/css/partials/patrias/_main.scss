@@ -1,0 +1,221 @@
+.select {
+    @include inputSelectStyle(black);
+}
+
+input {
+    @include inputSelectStyle(grey);
+}
+
+.main-container {
+    // .left-main-container 
+    .left-main-container {
+        // first-div: Flight-Details-Container
+        .border-bottom {
+            .flight-details-container {
+                // first-div: left-container
+                .left-container {
+                    .select-flight-details {
+                        border: none;
+                        color: grey;
+                    }
+                    p {
+                        font-size: 12px;
+                    }
+                    a {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        // second-div: passenger-details-container
+        .passenger-details-container {
+            .enter-your-details {
+                .gender {
+                    width: 94%;
+                }
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+        // third-div: billing-info-container
+        .billing-info-container {
+            p {
+                font-size: 14px;
+            }
+            .bottom-container {
+                p {
+                    font-size: 14px;
+                }
+                // card-images
+                .card-images {
+                    img {
+                        width: 70px
+                    }
+                    .mastercard {
+                        height: 35px;
+                    }
+                    .visa {
+                        height: 28px;
+                    }
+                    .vise-electronic {
+                        height: 30px;
+                    }
+                    .discover {
+                        height: 30px;
+                    }
+                    .maestro {
+                        height: 45px;
+                    }
+                }
+            }
+        }
+        // fourth-div: total-container
+        .total-container {
+            .top-container {
+                .left-container {
+                    p {
+                        font-size: 12px;
+                    }
+                }
+                .right-container {
+                    p {
+                        font-size: 30px;
+                        font-weight: bold;
+                    }
+                }
+            }
+            .bottom-container {
+                .book-btn {
+                    @include btnStyle (50px);
+                }
+            }
+        }
+    }
+    .right-main-container {
+        // right-main-container: top-container
+        .top-container {
+            // booking-summary-container
+            .booking-summary-container {
+                p {
+                    color: rgb(136, 129, 129);
+                    font-size: 13px;
+                }
+            }
+            // charges-container
+            .charges-container {
+                // charges-top-container
+                .charges-top-container {
+                    // left-top-container
+                    .left-top-container {
+                        font-size: 13px;
+                        .passenger-bold {
+                            font-weight: 500;
+                        }
+                        .economy-grey {
+                            color: rgb(136, 129, 129);
+                        }
+                    }
+                    // right-top-container
+                    .right-top-container {
+                        p {
+                            font-size: 14px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+                // charges-bottom-container
+                .charges-bottom-container {
+                    .right-bottom-container {
+                        .total-bold {
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+            // manage-your-bookings-container
+            .manage-your-bookings-container {
+                font-size: 13px;
+                .first-section {
+                    span {
+                        color: rgb(226, 96, 21);
+                    }
+                    .text-section {
+                        .text-grey {
+                            color: rgb(136, 129, 129);
+                        }
+                    }
+                }
+                .second-section {
+                    span {
+                        color: rgb(226, 96, 21);
+                    }
+                    .text-section {
+                        .text-grey {
+                            color: rgb(136, 129, 129);
+                        }
+                    }
+                }
+            }
+        }
+        // right-main-container: bottom-container
+        .bottom-container {
+            // manage-your-bookings-container-COPY
+            .manage-your-bookings-container {
+                font-size: 13px;
+                .first-section {
+                    span {
+                        color: rgb(226, 96, 21);
+                    }
+                    .text-section {
+                        .text-grey {
+                            color: rgb(136, 129, 129);
+                        }
+                    }
+                }
+                .second-section {
+                    span {
+                        color: rgb(226, 96, 21);
+                    }
+                    .text-section {
+                        .text-grey {
+                            color: rgb(136, 129, 129);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:576px) {
+    .main-container {
+        // left-main-container
+        .left-main-container {
+            .passenger-details-container {
+                .enter-your-details {
+                    .select {
+                        width: 97%;
+                    }
+                }
+            }
+            .billing-info-container {
+                .bottom-container {
+                    .enter-card-details {
+                        .card-num-container {
+                            .select {
+                                width: 95%;
+                            }
+                            .month {
+                                width: 103%;
+                            }
+                            input {
+                                width: 95%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,166 @@
+.container-fluid-img-background {
+  background-image: url("https://images.unsplash.com/photo-1437846972679-9e6e537be46e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80");
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+.container-fluid-img-background .navbar-container img {
+  height: 30px;
+}
+
+.container-fluid-img-background .navbar-container button {
+  width: 100px;
+  height: 40px;
+  color: white;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+.container-fluid-img-background .main-container {
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.container-fluid-img-background .main-container h1 {
+  font-size: 100px;
+  font-family: Poppins;
+  background: -webkit-gradient(linear, left top, right top, from(#ffa126), to(#6f02c8));
+  background: linear-gradient(90deg, #ffa126 0%, #6f02c8 100%);
+  text-transform: uppercase;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container-fluid-img-background .main-container p {
+  font-size: 40px;
+  font-family: Poppins;
+  background: -webkit-gradient(linear, left top, right top, from(#ffa126), to(#6f02c8));
+  background: linear-gradient(90deg, #ffa126 0%, #6f02c8 100%);
+  text-transform: uppercase;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container-fluid-img-background .main-container button {
+  width: 300px;
+  height: 60px;
+  color: white;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+.container-fluid-img-background .main-container button a {
+  text-decoration: none;
+  color: white;
+}
+
+.container-fluid-img-background .img-container-airplane {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: -80px;
+  z-index: 1;
+  left: 0;
+}
+
+.container-fluid-img-background .img-container-airplane img {
+  height: 100px;
+  -webkit-animation: airdavid 7s linear infinite;
+          animation: airdavid 7s linear infinite;
+}
+
+.container-fluid-img-background .img-container-airplane img:nth-child(1) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  height: 45px;
+}
+
+.container-fluid-img-background .img-container-airplane img:nth-child(2) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.container-fluid-img-background .img-container-airplane img:nth-child(3) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  height: 65px;
+}
+
+.container-fluid-img-background .img-container-airplane img:nth-child(4) {
+  -webkit-animation-delay: 4.5s;
+          animation-delay: 4.5s;
+}
+
+.container-fluid-img-background .img-container-airplane img:nth-child(5) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.container-fluid-img-background .img-container-airplane img:nth-child(6) {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+  height: 70px;
+}
+
+.container-fluid-img-background .img-container-airplane img:nth-child(7) {
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+}
+
+@-webkit-keyframes airdavid {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-80vh);
+            transform: translateY(-80vh);
+    opacity: 0;
+  }
+}
+
+@keyframes airdavid {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-80vh);
+            transform: translateY(-80vh);
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

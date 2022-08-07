@@ -1,0 +1,42 @@
+// navbar-container //
+.navbar-container {
+    background-color: rgb(44, 43, 43);
+    .navbar-container {
+        height: 70px;
+        // navbar-left-container //
+        .navbar-left-container {
+             :hover {
+                color: white;
+                font-weight: 500;
+            }
+            a {
+                color: silver;
+            }
+        }
+        // navbar-right-container //
+        .navbar-right-container {
+             :hover {
+                color: white;
+                font-weight: 500;
+            }
+            a {
+                color: silver;
+                font-size: 15px;
+            }
+            .usa-img {
+                height: 25px;
+            }
+            .user-img {
+                border-radius: 50%;
+                border: 1px solid white;
+                background: white;
+                width: 30px;
+                height: 30px;
+            }
+        }
+        // navbar-hamburger-icon  //
+        .navbar-hamburger-icon {
+            color: silver;
+        }
+    }
+}

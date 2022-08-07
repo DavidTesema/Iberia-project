@@ -1,0 +1,19 @@
+.copyright-container {
+    background-color: rgb(44, 43, 43);
+    .centering-container {
+        p {
+            color: rgb(136, 129, 129);
+            font-size: 14px;
+        }
+        .icons-container {
+            font-size: 11px;
+        }
+    }
+}
+
+@media screen and (max-width:576px) {
+    .copyright-container {
+        position: relative;
+        top: 180px;
+    }
+}

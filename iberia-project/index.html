@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css
+    ">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/partials/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- START: NAVBAR-CONTAINER -->
+    <nav class="navbar-container container-fluid">
+        <div class="navbar-container navbar container d-flex">
+            <!-- navbar-left-container-->
+            <div class="navbar-left-container d-flex align-items-center col-md-8">
+                <h2 class="fw-bold me-3 text-white">Adantrip</h2>
+                <div class="d-none d-md-block row">
+                    <a class="text-decoration-none" href="#">Hotels</a>
+                    <a class="text-decoration-none" href="#">Rooms</a>
+                    <a class="text-decoration-none" href="#">Flights</a>
+                    <a class="text-decoration-none" href="#">Cars</a>
+                    <a class="text-decoration-none" href="#">Experiences</a>
+                </div>
+            </div>
+            <!-- navbar-right-container -->
+            <div class="navbar-right-container d-none d-md-flex  justify-content-md-around align-items-md-center col-md-3">
+                <a class="text-decoration-none" href="#">USD</a>
+                <img class="usa-img" src="images/united-states.png" alt="USA">
+                <img class="user-img" src="images/use.png" alt="user">
+                <a class="text-decoration-none" href="#">My Account</a>
+            </div>
+            <!-- navbar-hamburger-icon -->
+            <div class="navbar-hamburger-icon d-md-none d-flex ">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- END: NAVBAR-CONTAINER -->
+
+    <!-- START: MAIN-CONTAINER -->
+    <main class="main-container-fluid container-fluid d-flex justify-content-center mt-5 col-12">
+        <div class="main-container container row p-0">
+
+            <!-- START: LEFT-MAIN-CONTAINER -->
+            <div class="left-main-container col-md-8">
+
+                <!-- first-div: Flight-Details-Container -->
+                <div class="border-bottom">
+                    <div class="flight-details-container row col-12 justify-content-between mb-4">
+                        <!-- first-div: left-container -->
+                        <div class="left-container ms-2 col-md-6 ms-md-0">
+                            <h6>Buenos Aires → lle de France</h6>
+                            <p>Round Trip, Economy, 1 passenger</p>
+                            <p class="mb-0">Depart: Aug 15, 2019</p>
+                            <p>Return: Aug 16, 2019</p>
+                            <a class="text-decoration-none" href="#">
+                                FLIGHT DETAILS 
+                                <select class="select-flight-details"></select>
+                            </a>
+                        </div>
+                        <!--first-div: right-container -->
+                        <div class="right-container d-none d-sm-block col-md-2">
+                            <img src="images/iberia.svg" alt="logo-img">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- second-div: Enter Passenger Details -->
+                <div class="passenger-details-container mb-md-1 mt-4 border-bottom">
+
+                    <h5 class="ms-2 ms-md-0">Enter Passenger Details</h5>
+                    <p class="ms-2 ms-md-0">Passenger 1</p>
+                    <!-- enter-your-details -->
+                    <div class="enter-your-details row col-12 mb-2 mb-md-1">
+                        <!-- enter-date -->
+                        <div class="enter-date mb-3 col-12 col-md-6 pe-0 ">
+                            <!-- Select Month -->
+                            <select class="select month col-11 mb-3 mb-md-0 col-md-5 me-1">
+                                <option selected>Month</option>
+                                <option value="01">Jan.</option>
+                                <option value="02">Feb.</option>
+                                <option value="03">Mar.</option>
+                                <option value="04">Apr.</option>
+                                <option value="05">May</option>
+                                <option value="06">June</option>
+                                <option value="07">July</option>
+                                <option value="08">Aug.</option>
+                                <option value="09">Sept.</option>
+                                <option value="10">Oct.</option>
+                                <option value="11">Nov.</option>
+                                <option value="12">Dec.</option>
+                            </select>
+
+                            <!--Select Day -->
+                            <select class="select day col-11 mb-3 mb-md-0 col-md-3 me-1">
+                                <option selected>Day</option>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+                            <!--Select Year -->
+                            <select class="select year col-11 col-md-3">
+                                <option selected>Year</option>
+                                <option value="1940">1940</option>
+                                <option value="1941">1941</option>
+                                <option value="1942">1942</option>
+                                <option value="1943">1943</option>
+                                <option value="1944">1944</option>
+                                <option value="1945">1945</option>
+                                <option value="1946">1946</option>
+                                <option value="1947">1947</option>
+                                <option value="1948">1948</option>
+                                <option value="1949">1949</option>
+                                <option value="1950">1950</option>
+                                <option value="1951">1951</option>
+                                <option value="1952">1952</option>
+                                <option value="1953">1953</option>
+                                <option value="1954">1954</option>
+                                <option value="1955">1955</option>
+                                <option value="1956">1956</option>
+                                <option value="1957">1957</option>
+                                <option value="1958">1958</option>
+                                <option value="1959">1959</option>
+                                <option value="1960">1960</option>
+                                <option value="1961">1961</option>
+                                <option value="1962">1962</option>
+                                <option value="1963">1963</option>
+                                <option value="1964">1964</option>
+                                <option value="1965">1965</option>
+                                <option value="1966">1966</option>
+                                <option value="1967">1967</option>
+                                <option value="1968">1968</option>
+                                <option value="1969">1969</option>
+                                <option value="1970">1970</option>
+                                <option value="1971">1971</option>
+                                <option value="1972">1972</option>
+                                <option value="1973">1973</option>
+                                <option value="1974">1974</option>
+                                <option value="1975">1975</option>
+                                <option value="1976">1976</option>
+                                <option value="1977">1977</option>
+                                <option value="1978">1978</option>
+                                <option value="1979">1979</option>
+                                <option value="1980">1980</option>
+                                <option value="1981">1981</option>
+                                <option value="1982">1982</option>
+                                <option value="1983">1983</option>
+                                <option value="1984">1984</option>
+                                <option value="1985">1985</option>
+                                <option value="1986">1986</option>
+                                <option value="1987">1987</option>
+                                <option value="1988">1988</option>
+                                <option value="1989">1989</option>
+                                <option value="1990">1990</option>
+                                <option value="1991">1991</option>
+                                <option value="1992">1992</option>
+                                <option value="1993">1993</option>
+                                <option value="1994">1994</option>
+                                <option value="1995">1995</option>
+                                <option value="1996">1996</option>
+                                <option value="1997">1997</option>
+                                <option value="1998">1998</option>
+                                <option value="1999">1999</option>
+                                <option value="2000">2000</option>
+                                <option value="2001">2001</option>
+                                <option value="2002">2002</option>
+                                <option value="2003">2003</option>
+                                <option value="2004">2004</option>
+                                <option value="2005">2005</option>
+                                <option value="2006">2006</option>
+                                <option value="2007">2007</option>
+                                <option value="2008">2008</option>
+                                <option value="2009">2009</option>
+                                <option value="2010">2010</option>
+                                <option value="2011">2011</option>
+                                <option value="2012">2012</option>
+                                <option value="2013">2013</option>
+                                <option value="2014">2014</option>
+                                <option value="2015">2015</option>
+                                <option value="2016">2016</option>
+                                <option value="2017">2017</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                            </select>
+                        </div>
+                        <div class="enter-gender col-12 mb-2 mb-md-0 col-md-6">
+                            <select class="select gender col-12 col-md-11 w-100">
+                                <option selected>Gender</option>
+                                <option>Female</option>
+                                <option>Man</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Passenger Details -->
+                    <!-- ENTER: full name -->
+                    <div class="row col-12 mb-2 mb-md-1">
+                        <div class="enter-first-name mb-3 col-12 col-md-6 ">
+                            <input class="col-12" type="text" placeholder="First Name">
+                        </div>
+                        <div class="enter-last-name col-12 mb-2 col-md-6">
+                            <input class="col-12" type="text" placeholder="Last Name">
+                        </div>
+                    </div>
+
+                    <div class="row col-12 mb-2 mb-md-1">
+                        <!-- ENTER: passport-serial -->
+                        <div class="enter-passport-serial mb-3 col-md-6">
+                            <input class="col-12" type="text" placeholder="Passport Serial">
+                        </div>
+                        <!-- ENTER: citizenship -->
+                        <div class="enter-citizenship col-md-6">
+                            <select class="select col-12">
+                                <option selected>Citizenship</option>
+                                <option>Israeli</option>
+                                <option>European</option>
+                                <option>Portuguese</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- third-div: Enter Billing Informatio -->
+                <div class="billing-info-container row mb-3 mt-4 mb-md-2">
+                    <h5 class="ms-1">Enter Billing Information</h5>
+
+                    <!-- top-container -->
+                    <div class="top-container">
+
+                        <!-- billing address -->
+                        <p class="ms-1">Billing Address</p>
+
+                        <div class="row col-12 mb-md-1">
+                            <!-- ENTER: street-1 -->
+                            <div class="enter-street-1 col-12 mb-3 col-md-6">
+                                <input class="col-12" type="text" placeholder="Street (line 1)">
+                            </div>
+                            <!-- ENTER: street-2 -->
+                            <div class="enter-street-2 col-12 mb-3 col-md-6 mb-md-1">
+                                <input class="col-12" type="text" placeholder="Street (line 2)">
+                            </div>
+                        </div>
+
+                        <div class="row col-12 mb-md-1">
+                            <!-- ENTER: postal-code -->
+                            <div class="enter-postal-code col-12 mb-3 col-md-6">
+                                <input class="col-12" type="text" placeholder="Postal Code">
+                            </div>
+                            <!-- ENTER: city -->
+                            <div class="enter-city col-12 mb-3 col-md-6">
+                                <input class="col-12" type="text" placeholder="City">
+                            </div>
+                        </div>
+
+                        <div class="row col-12 mb-md-1">
+                            <!-- ENTER: state/region -->
+                            <div class="enter-state col-12 mb-3 col-md-6">
+                                <select class="select state col-12">
+                                    <option selected>State/Region</option>
+                                    <option value="1">Israel</option>
+                                    <option value="2">Europe</option>
+                                    <option value="3">U.S</option>
+                                </select>
+                            </div>
+                            <!-- ENTER: country -->
+                            <div class="enter-country col-12 mb-3 col-md-6">
+                                <select class="select country col-12">
+                                    <option selected>Select Country</option>
+                                    <option value="1">Israel</option>
+                                    <option value="2">UK</option>
+                                    <option value="3">Portuguese</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- bottom-container: Card Details  -->
+                    <div class="bottom-container border-bottom">
+                        <p class="ms-2">Card Details</p>
+
+                        <div class="row col-12 mb-md-1">
+                            <!-- ENTER: name-on-card -->
+                            <div class="enter-name-on-card col-12 mb-3 col-md-6">
+                                <input class="col-12" type="text" placeholder="Name on Card">
+                            </div>
+                            <!-- ENTER: card-num -->
+                            <div class="card-num col-12 mb-3 col-md-6">
+                                <input class="col-12" type="text" placeholder="Credit/Debit Card Number">
+                            </div>
+                        </div>
+                        <div class="enter-card-details row mb-md-1">
+                            <div class="card-num-container d-md-flex col-12 col-md-6">
+
+                                <!-- ENTER: month -->
+                                <div class="col-11 mb-3 col-md-4">
+                                    <select class="select month  col-12 col-md-11">
+                                        <option selected>Month</option>
+                                        <option value="01">Jan.</option>
+                                        <option value="02">Feb.</option>
+                                        <option value="03">Mar.</option>
+                                        <option value="04">Apr.</option>
+                                        <option value="05">May</option>
+                                        <option value="06">June</option>
+                                        <option value="07">July</option>
+                                        <option value="08">Aug.</option>
+                                        <option value="09">Sept.</option>
+                                        <option value="10">Oct.</option>
+                                        <option value="11">Nov.</option>
+                                        <option value="12">Dec.</option>
+                                    </select>
+                                </div>
+
+                                <!-- ENTER: year -->
+                                <div class="col-12 mb-3 col-md-4">
+                                    <select class="select col-11">
+                                        <option value="2022">2022</option>
+                                        <option value="2023">2023</option>
+                                        <option value="2024">2024</option>
+                                        <option value="2025">2025</option>
+                                        <option value="2026">2026</option>
+                                        <option value="2027">2027</option>
+                                        <option value="2028">2028</option>
+                                    </select>
+                                </div>
+
+                                <!-- ENTER: security-code -->
+                                <div class="col-12 mb-3 mb-md-0 col-md-4">
+                                    <input class="col-11" type="number" placeholder="Security Code">
+                                </div>
+                            </div>
+
+                            <!-- card-images -->
+                            <div class="card-images row col-12 mb-2 col-md-6 align-items-center justify-content-end w-99">
+                                <img class="mastercard" src="images/mastercard.png" alt="mastercard">
+                                <img class="visa" src="images/Visa.png" alt="visa">
+                                <img class="vise-electronic" src="images/Visa-electronic.png" alt="vise-electronic">
+                                <img class="discover" src="images/discover new.png" alt="discover">
+                                <img class="maestro" src="images/maestro.png" alt="maestro">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- fourth-div: Total-Container -->
+                <div class="total-container row mb-2 mt-4">
+                    <!-- top-container -->
+                    <div class="top-container d-md-flex col-12 mb-2 justify-content-between align-items-center">
+                        <!-- left-container -->
+                        <div class="left-container row col-12 mb-2 col-md-8">
+                            <h5 class="fw-bold">Total</h5>
+                            <p class="mb-0">By clicking book now button you agree with terms and conditionals and money
+                            </p>
+                            <p class="mb-0">back gurantee. Thank you for trusting our service.</p>
+                        </div>
+                        <!-- right-container -->
+                        <div class="right-container row col-12 mb-md-2 col-md-3">
+                            <p>$1907.68</p>
+                        </div>
+                    </div>
+                    <!-- bottom-container -->
+                    <div class="bottom-container row col-12 mb-3 mb-md-0">
+                        <!-- book-btn -->
+                        <button class="book-btn col-12">BOOK NOW</button>
+                    </div>
+                </div>
+            </div>
+            <!-- END: LEFT-MAIN-CONTAINER -->
+
+            <!-- START: RIGHT-MAIN-CONTAINER -->
+            <div class="right-main-container container d-flex flex-column justify-content-between col-md-4">
+                <!-- right-main-container: top-container -->
+                <div class="top-container">
+                    <!-- first-div: booking-summary -->
+                    <div class="booking-summary-container border p-3">
+                        <h6 class="fw-bold mb-3">Booking Summary</h6>
+                        <p class="mb-0">Round Trip, Economy, 1 passenger</p>
+                        <p class="mb-0">Depart: Aug 15, 2019</p>
+                        <p>Return: Aug 16, 2019 </p>
+                    </div>
+                    <!-- second-div: charges-container -->
+                    <div class="charges-container border p-3 mt-3">
+                        <h6 class="fw-bold mb-3">Charges</h6>
+                        <!-- charges-top-container -->
+                        <div class="charges-top-container d-flex align-items-center justify-content-between border-bottom">
+                            <!-- left-top-container -->
+                            <div class="left-top-container">
+                                <p class="passenger-bold mb-0">1 passenger</p>
+                                <p class="economy-grey mb-2"> Economy</p>
+                            </div>
+                            <!-- right-top-container -->
+                            <div class="right-top-container">
+                                <p>$1907.68</p>
+                            </div>
+                        </div>
+                        <!-- charges-bottom-container -->
+                        <div class="charges-bottom-container d-flex align-items-center justify-content-between mt-2">
+                            <!-- right-bottom-container -->
+                            <div class="right-bottom-container">
+                                <p class="total-bold">Total</p>
+                            </div>
+                            <!-- left-bottom-container -->
+                            <div class="left-bottom-container">
+                                <h6>$1907.68</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!--third-div: manage-your-bookings-container  -->
+                    <div class="manage-your-bookings-container border p-3 mt-3">
+                        <div class="first-section d-flex">
+                            <div class="fw-bolder me-2"><span>✓</span></div>
+                            <div class="text-section">
+                                <p class="fw-bold mb-1">Manage your bookings!</p>
+                                <p class="text-grey">You're in control of your booking - no registration required.</p>
+                            </div>
+
+                        </div>
+                        <!-- second-section -->
+                        <div class="second-section d-flex">
+                            <div class="fw-bolder me-2"><span>✓</span></div>
+                            <div class="text-section">
+                                <p class="fw-bold mb-0">Customer support available 24/7 </p>
+                                <p class="fw-bold mb-1">worldwide!</p>
+                                <p class="text-grey">Website and customer support in English and 41 other languages.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- right-main-container: bottom-container -->
+                <div class="bottom-container d-flex d-none d-md-block border p-3 mt-3">
+                    <!--manage-your-bookings-container-COPY-LAST-DIV  -->
+                    <div class="manage-your-bookings-container">
+                        <!-- first-section -->
+                        <div class="first-section d-flex">
+                            <div class="fw-bolder me-2"><span>✓</span></div>
+                            <div class="text-section">
+                                <p class="fw-bold mb-1">Manage your bookings!</p>
+                                <p class="text-grey">You're in control of your booking - no registration required.</p>
+                            </div>
+
+                        </div>
+                        <!-- second-section -->
+                        <div class="second-section d-flex">
+                            <div class="fw-bolder me-2"><span>✓</span></div>
+                            <div class="text-section">
+                                <p class="fw-bold mb-0">Customer support available 24/7 </p>
+                                <p class="fw-bold mb-1">worldwide!</p>
+                                <p class="text-grey">Website and customer support in English and 41 other languages.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END: RIGHT-MAIN-CONTAINER -->
+    </main>
+    <!-- END: MAIN-CONTAINER -->
+
+    <!-- START: FOOTER-CONTAINER -->
+    <footer class="footer-container container-fluid flex-column col-12 mt-4 border-top border-2 text-center text-md-start bg-light">
+        <div class="centering-container d-md-flex container justify-content-md-between">
+
+            <!-- left-footer-container -->
+            <div class="left-footer-container d-md-flex container mt-4">
+
+                <!-- first-column: adantrip about -->
+                <div class="adantrip-about-container col-md-3 me-md-5 mb-5 mb-md-0">
+                    <h3 class="fw-bold">Adantrip</h3>
+                    <p class="mb-0">Pellentesque quam suscipit non aptent torquent</p>
+                    <p class="mb-0">commodo curae ut aliquet augue tortor cubilia</p>
+                    <p>lobortis sodales</p>
+                    <p class="mb-0">Suscipit risus varius torquent aptent velit felis</p>
+                    <p class="mb-0">sem himenaeos lacus fermentum potenti facilisi</p>
+                    <p>felis vulputate</p>
+
+                </div>
+
+                <!-- second-column: travel-mate -->
+                <div class="travel-mate-container d-flex flex-column d-md-flex col-md-1 me-md-5 mb-5 mb-md-0">
+                    <h6 class="mb-3 fw-bold">Travel Mate</h6>
+                    <a class="text-decoration-none mb-1" href="#">About Travel Mate</a>
+                    <a class="text-decoration-none mb-1" href="#">Mobile App</a>
+                    <a class="text-decoration-none mb-1" href="#">Customer Support</a>
+                    <a class="text-decoration-none mb-1" href="#">Advertising</a>
+                    <a class="text-decoration-none mb-1" href="#">Jobs</a>
+                    <a class="text-decoration-none mb-1" href="#">Privacy Policy</a>
+                    <a class="text-decoration-none mb-1" href="#">Terms of Use</a>
+                </div>
+
+                <!-- third-column: explore -->
+                <div class="explore-container d-flex flex-column d-md-flex col-md-1 me-md-5 mb-5 mb-md-0">
+                    <h6 class="mb-3 fw-bold">Explore</h6>
+                    <a class="text-decoration-none mb-1" href="#">Countries</a>
+                    <a class="text-decoration-none mb-1" href="#">Regions</a>
+                    <a class="text-decoration-none mb-1" href="#">Cities</a>
+                    <a class="text-decoration-none mb-1" href="#">Districs</a>
+                    <a class="text-decoration-none mb-1" href="#">Airports</a>
+                    <a class="text-decoration-none mb-1" href="#">Hotels</a>
+                    <a class="text-decoration-none mb-1" href="#">Places of interest</a>
+                </div>
+
+                <!-- fourth-column: book -->
+                <div class="book-container d-flex flex-column d-md-flex col-md-1 mb-md-5">
+                    <h6 class="mb-3 fw-bold">Book</h6>
+                    <a class="text-decoration-none mb-1" href="#">Apartments</a>
+                    <a class="text-decoration-none mb-1" href="#">Resort</a>
+                    <a class="text-decoration-none mb-1" href="#">Villas</a>
+                    <a class="text-decoration-none mb-1" href="#">Hostels</a>
+                    <a class="text-decoration-none mb-1" href="#">B&Bs</a>
+                    <a class="text-decoration-none mb-1" href="#">Guesthouses</a>
+                    <a class="text-decoration-none mb-5 mb-md-2" href="#">Hotel Chains</a>
+                </div>
+            </div>
+
+            <!-- right-footer-container -->
+            <div class="right-footer-container mt-0 pt-0">
+                <!-- advertising img -->
+                <img class="advertising-img" src="images/photo-footer-trvel.avif-2.avif" alt="advertising img">
+                <!-- advertising-info -->
+                <div class="advertising-info d-flex flex-column mt-3 text-white">
+                    <p class="fw-bold mb-2"> Save up to 50% off your next trip</p>
+                    <p class="mb-1"> Subscribe to unlock our secret deals</p>
+                    <input class="col-12" type="text" placeholder="   Type your e-mail here">
+                    <button class="btn-advertising mt-3 col-5">GET DEALS</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END: FOOTER-CONTAINER -->
+
+    <!-- copyright-container -->
+    <div class="copyright-container container-fluid">
+        <div class="centering-container container row-cols-sm-3 d-md-flex justify-content-md-between align-items-baseline">
+            <p class="ms-5 ms-md-2 mt-md-2 d-flex align-items-center">
+                Copyright © 2018 <span class="fw-bold text-white">Adantrip</span>. All rights reserved.
+            </p>
+            <!-- icons-container -->
+            <div class="icons-container d-flex col-7 col-md-2 justify-content-evenly align-items-center  justify-content-md-around ms-5 me-md-2 ms-md-4 text-white">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-google"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

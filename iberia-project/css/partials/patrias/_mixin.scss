@@ -1,0 +1,16 @@
+// button function
+@mixin btnStyle ($height) {
+    background-color: rgb(226, 96, 21);
+    color: white;
+    font-weight: bold;
+    border: none;
+    height: $height;
+}
+
+// input-select-style function
+@mixin inputSelectStyle ($color) {
+    height: 35px;
+    border: solid 1px rgb(163, 161, 161);
+    font-size: 13px;
+    color: $color;
+}

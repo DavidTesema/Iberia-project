@@ -1,0 +1,110 @@
+@mixin buttonStyle($width, $height) {
+  width: $width;
+  height: $height;
+  color: white;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+.container-fluid-img-background {
+  background-image: url("https://images.unsplash.com/photo-1437846972679-9e6e537be46e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80");
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+  .navbar-container {
+    img {
+      height: 30px;
+    }
+    button {
+      @include buttonStyle(100px, 40px);
+    }
+  }
+
+  .main-container {
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    position: relative;
+    h1 {
+      font-size: 100px;
+      font-family: Poppins;
+      background: linear-gradient(90deg, rgba(255,161,38,1) 0%, rgba(111,2,200,1) 100%);
+      text-transform: uppercase;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p{
+      font-size: 40px;
+      font-family: Poppins;
+      background: linear-gradient(90deg, rgba(255,161,38,1) 0%, rgba(111,2,200,1) 100%);
+      text-transform: uppercase;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+    button {
+      @include buttonStyle(300px,60px);
+      a{
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+  .img-container-airplane {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    align-items: center;
+    bottom: -80px;
+    z-index: 1;
+    left: 0;
+    img {
+      height: 100px;
+      animation: airdavid 7s linear infinite;
+      &:nth-child(1) {
+        animation-delay: 2s;
+        height: 45px;
+      }
+      &:nth-child(2) {
+        animation-delay: 1s;
+      }
+      &:nth-child(3) {
+        animation-delay: 3s;
+        height: 65px;
+      }
+      &:nth-child(4) {
+        animation-delay: 4.5s;
+      }
+      &:nth-child(5) {
+        animation-delay: 3s;
+      }
+      &:nth-child(6) {
+        animation-delay: 6s;
+        height: 70px;
+      }
+      &:nth-child(7) {
+        animation-delay: 7s;
+      }
+    }
+  }
+  @keyframes airdavid {
+    0% {
+      transform: translateY(0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    70% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-80vh);
+      opacity: 0;
+    }
+  }
+}
