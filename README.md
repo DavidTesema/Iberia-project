@@ -3,7 +3,7 @@
 * The site simulates ordering a real flight ticket from Iberia Airlines
 # Project Flow
 * Difficulties:
-1.The work was in a team. Our biggest difficulty in the project was sharing code between computers
+* 1.The work was in a team. Our biggest difficulty in the project was sharing code between computers
 * What was goood:
 1. work in a team
 2. designing the page 
